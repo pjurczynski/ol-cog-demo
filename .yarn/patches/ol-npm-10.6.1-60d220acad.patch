@@ -1,0 +1,34 @@
+diff --git a/layer/WebGLTile.js b/layer/WebGLTile.js
+index c93beb868723891e774aa230a57c4f0c10587a0e..01a7ab508dca879256585b7982b781708a9d0325 100644
+--- a/layer/WebGLTile.js
++++ b/layer/WebGLTile.js
+@@ -1,7 +1,7 @@
+ /**
+  * @module ol/layer/WebGLTile
+  */
+-import {ColorType, NumberType} from '../expr/expression.js';
++import { ColorType, NumberType } from '../expr/expression.js';
+ import {
+   PALETTE_TEXTURE_ARRAY,
+   getStringNumberEquivalent,
+@@ -9,7 +9,7 @@ import {
+   uniformNameForVariable,
+ } from '../expr/gpu.js';
+ import LayerProperty from '../layer/Property.js';
+-import {expressionToGlsl} from '../render/webgl/compileUtil.js';
++import { expressionToGlsl } from '../render/webgl/compileUtil.js';
+ import WebGLTileLayerRenderer, {
+   Attributes,
+   Uniforms,
+@@ -220,11 +220,7 @@ function parseStyle(style, bandCount) {
+   );
+ 
+   const fragmentShader = `
+-    #ifdef GL_FRAGMENT_PRECISION_HIGH
+     precision highp float;
+-    #else
+-    precision mediump float;
+-    #endif
+ 
+     varying vec2 v_textureCoord;
+     varying vec2 v_mapCoord;

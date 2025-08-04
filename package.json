@@ -1,7 +1,7 @@
 {
   "name": "cog",
   "dependencies": {
-    "ol": "^10.6.1"
+    "ol": "patch:ol@npm%3A10.6.1#~/.yarn/patches/ol-npm-10.6.1-60d220acad.patch"
   },
   "devDependencies": {
     "uuid": "^11.1.0",
