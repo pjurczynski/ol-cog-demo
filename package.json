@@ -1,0 +1,21 @@
+{
+  "name": "cog",
+  "dependencies": {
+    "ol": "^10.6.1"
+  },
+  "devDependencies": {
+    "uuid": "^11.1.0",
+    "vite": "^3.2.11"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "version": "1.0.0",
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "yarn@4.9.2"
+}
